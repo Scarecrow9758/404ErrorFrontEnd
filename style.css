@@ -1,0 +1,154 @@
+@import url('./reset.css');
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background:url(./404-Page.jpg);
+    background-repeat:no-repeat;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    max-width: 727px;
+
+}
+#header{
+    font-size: 103px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+.TextGothic{
+    font-family: "AlternateGothic2 BT";
+    color: white;
+}
+.TextUbuntu{
+    font-family: "Ubuntu";
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform:uppercase;
+}
+#countdown{
+    margin-top: 67px;
+}
+.countdown{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    display:  flex;
+    justify-content: center;
+    align-items:center;
+    /*Марджин только потому что не могу заставить Лишки спэйс битвинится
+    Из расчёта - расстояние по псд макету/2*/
+}
+.circle_border{
+    border: 5px solid white;
+    /*Посколько сам бордер - 5пс то мы должны сместить на 5 сам радиус*/
+    border-radius: 71px;
+    width: 132px;
+    height: 132px;
+}
+.circle {
+    border-radius: 66px;
+    width: 132px;
+    height: 132px;
+    background-color: white;
+    opacity: 10%;
+}
+.circle:hover {
+}
+.countdown .TextUbuntu{
+    position: absolute;
+    opacity: 100%;
+    font-size: 78px;
+    color: white;
+    margin-bottom: 5px;
+}
+.countdown .TextUbuntu:hover{
+    font-size: 85px;
+    transition: ease-in 0.7s;
+
+}
+/*Есть обращение к последнему р -т.е к андертексту*/
+.countdown p:last-child{
+    margin-top:calc(66px * 2 + 44px);
+    font-size: 17px;
+}
+.Input{
+    color: white;
+    font-family: "Ubuntu";
+}
+
+#SearchField{
+    margin-top: 80px;
+    width: 100%;
+    max-height: 50px;
+    
+}
+.SearchField::placeholder{
+    color: #575757;
+    padding-left: 15px;
+}
+.SearchField{
+    padding-left: 15px;
+    color: #575757;
+    font-size: 15px;
+    font-weight:normal;
+    width: 510px;
+    height: 50px;
+}
+
+.Submit{
+    border: 2px white solid;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: none;
+    width: 180px;
+    height: 52px;
+}
+.Submit:hover{
+    border: 3px white solid;
+    transition: ease-in-out 0.5ms;
+    cursor: pointer;
+}
+
+.Media{
+    margin-top: 77px;
+}
+
+.Media .countdown{
+    justify-content: space-evenly;
+}
+.Media .circle{
+    border-radius: 66px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    opacity: 10%;
+
+}
+.Media .circle:hover{
+}
+.Media .circle_border{
+    border: 5px solid white;
+    /*Посколько сам бордер - 5пс то мы должны сместить на 5 сам радиус*/
+    border-radius: 71px;
+    width: 60px;
+    height: 60px;
+}
+.Media .Imgs{
+    position: absolute;
+}
+
+.Copyright{
+    flex-direction: row;
+    display: flex;
+    margin-top: 100px;
+    margin-right: 70%;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 14px;
+}

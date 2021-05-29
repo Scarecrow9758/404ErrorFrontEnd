@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <p id='header' class='TextGothic'>Sorry page not found</p>
+            <p class='TextUbuntu'>The link you followed probably broken <br>or the page has been removed</p>
+        </div>
+        <!--Да мне просто кажется id юзабельнее будет, раз мы 1 раз обращаемся-->
+        <div id="countdown">
+            <ul class="countdown">
+                <!--Бэкграундом задаём шэйп и заливку, внутрь помещаем р или спан-->
+                <!--Countdown контролируется при помощи JS/PHP со стороны фронтенда - т.к работа с SQL и сервером
+                    Я же сделал просто тестик работающий до перезагрузки страницы-->
+                <li><div class="circle_border"><div class="circle"></div></div><p class='TextUbuntu' id='days'>28</p><p class='TextUbuntu UnderCountdown' id='days_text'>days</p></li>
+                <li><div class="circle_border"><div class="circle"></div></div><p class='TextUbuntu' id='hours'>08</p><p class='TextUbuntu UnderCountdown' id='hours_text'>hours</p></li>
+                <li><div class="circle_border"><div class="circle"></div></div><p class='TextUbuntu' id='minutes'>43</p><p class='TextUbuntu UnderCountdown' id='minutes_text'>minutes</p></li>
+                <li><div class="circle_border"><div class="circle"></div></div><p class='TextUbuntu' id='seconds'>25</p><p class='TextUbuntu UnderCountdown' id='seconds_text'>seconds</p></li>
+                <!-- <div class="circle"><li><p class='TextUbuntu' id='hours'>08</p></li></div>
+                <div class="circle"><li><p class='TextUbuntu' id='minutes'>43</p></li></div>
+                <div class="circle"><li><p class='TextUbuntu'id='seconds'>25</p></li></div> -->
+            </ul>
+        </div>
+        <form action="" id='SearchField'>
+            <input class="SearchField Input" type="text" name="Search" placeholder="Subscribe To Our Newsletter">
+            <input class = "Submit Input" type="submit" value="submit">
+        </form>
+
+        <div class="Media">
+            <ul class=countdown>
+                <li><div class="circle_border"><div class="circle"></div></div><a class='Imgs' id='facebook'><img src="./Icons/facebook.png" alt=""></a></li>
+                <li><div class="circle_border"><div class="circle"></div></div><a class='Imgs' id='twitter'><img src="./Icons/twitter.png" alt=""></a></li>
+                <li><div class="circle_border"><div class="circle"></div></div><a class='Imgs' id='inst'><img src="./Icons/Inst.png" alt=""></a></li>
+                <li><div class="circle_border"><div class="circle"></div></div><a class='Imgs' id='youtube'><img src="./Icons/youtube.png" alt=""></a></li>
+                <li><div class="circle_border"><div class="circle"></div></div><a class='Imgs' id='g+'><img src="./Icons/g+.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class='Copyright'>
+        <p>Copyright @ 2015 PSDFREEBIES. All rights reserved </p>
+    </div>
+</body>
+</html>
