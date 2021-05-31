@@ -1,17 +1,19 @@
 @import url('./reset.css');
 body{
     display: flex;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background:url(./404-Page.jpg);
-    background-repeat:no-repeat;
+    background-position: top;
+    
 }
 #main{
     display: flex;
     flex-direction: column;
     max-width: 727px;
-
+    
 }
 #header{
     font-size: 103px;
