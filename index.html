@@ -58,7 +58,7 @@
         background_array.push('/404-Page_'+index+'.jpg')
     }
     our_body=document.getElementsByTagName("body")
-    //-1 чтобы не больше 5, +1 чтобы больше нуля. т.к картинки _0 нет
-    our_body[0].background=background_array[Math.floor(Math.random()*(number_of_images-1))+1]
+    // +1 чтобы больше нуля. т.к картинки _0 нет
+    our_body[0].background=background_array[Math.floor(Math.random()*(number_of_images))+1]
 
 </script>
