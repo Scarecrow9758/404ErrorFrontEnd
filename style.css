@@ -121,7 +121,7 @@ li{
     border: 3px white solid;
     transition: ease-in-out 0.5ms;
     cursor: pointer;
-    background-color: black;
+    background: black;
     opacity:0.85;
     color:white;
 }
