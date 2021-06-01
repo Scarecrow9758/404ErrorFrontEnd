@@ -11,8 +11,8 @@
 <body>
     <div id="main">
         <div>
-            <p id='header' class='TextGothic'>Sorry page not found</p>
-            <p class='TextUbuntu'>The link you followed probably broken <br>or the page has been removed</p>
+            <h1 id='header' class='TextGothic'>Sorry page not found</h1>
+            <h2 class='TextUbuntu'>The link you followed probably broken <br>or the page has been removed</h2>
         </div>
         <!--Да мне просто кажется id юзабельнее будет, раз мы 1 раз обращаемся-->
         <div id="countdown">
@@ -58,7 +58,42 @@
         background_array.push('./Icons/404-Page_'+index+'.jpg')
     }
     our_body=document.getElementsByTagName("body")
+<<<<<<< Updated upstream
     // +1 чтобы больше нуля. т.к картинки _0 нет
     our_body[0].background=background_array[Math.round(Math.random()*(number_of_images-1))]
 
 </script>
+=======
+    //-1 чтобы не больше 5, +1 чтобы больше нуля. т.к картинки _0 нет
+    our_body[0].background=background_array[Math.floor(Math.random()*(number_of_images-1))+1]
+    
+   
+    //Релизная дата по заказчику
+    let days=document.getElementById('days')
+    let hours=document.getElementById('hours')
+    let minutes=document.getElementById('minutes')
+    let seconds=document.getElementById('seconds')
+    let Release_Date=new Date(2021,06,12,23,59,0,0)
+    let now_Date=new Date()
+    if (Release_Date>now_Date) {
+        //10 миллисекунд - чисто символически, за это время он меняет таймер
+        let countdown=setTimeout(Start_Countdown,10)
+    }
+    else{
+        days.innerHTML=0
+        hours.innerHTML=0
+        minutes.innerHTML=0
+        seconds.innerHTML=0
+    }
+    function Start_Countdown(){
+        //Не создавая объектов Даты - он не хочет считать секунды, постоянно зацикливаясь на одном значении
+        Release_Date=new Date(2021,05,12,23,59,0,0)
+        now_Date=new Date()
+        days.innerHTML=Math.abs(Release_Date.getDate()-now_Date.getDate()-1)
+        hours.innerHTML=Math.abs(Release_Date.getHours()-now_Date.getHours())
+        minutes.innerHTML=Math.abs(Release_Date.getMinutes()-now_Date.getMinutes()+1)
+        seconds.innerHTML=Math.abs(Release_Date.getSeconds()-now_Date.getSeconds())
+        countdown=setTimeout(Start_Countdown,1000)
+    }
+</script>
+>>>>>>> Stashed changes
