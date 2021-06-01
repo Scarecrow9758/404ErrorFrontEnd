@@ -126,7 +126,7 @@ li{
     transition: ease-in-out 0.5ms;
     cursor: pointer;
     background-color: black;
-    opacity:85%;
+    opacity:0.85;
     color:white;
 }
 
