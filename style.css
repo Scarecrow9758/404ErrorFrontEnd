@@ -98,11 +98,7 @@ li{
     color: #575757;
     background-color: black;
 }
-.SearchField:hover{
-    opacity: 85%;
-    color: white;
-    background-color: black;
-}
+
 .SearchField{
     padding-left: 15px;
     color: #575757;
