@@ -80,7 +80,7 @@
         seconds.innerHTML=0
     }
     function Start_Countdown(){
-        //Не создавая объектов Даты - он не хочет считать секунды, постоянно зацикливаясь на одном значении
+        //Не создавая объектов Дат - он не хочет считать секунды, постоянно зацикливаясь на одном значении
         Release_Date=new Date(2021,05,12,23,59,0,0)
         now_Date=new Date()
         days.innerHTML=Math.abs(Release_Date.getDate()-now_Date.getDate()-1)
