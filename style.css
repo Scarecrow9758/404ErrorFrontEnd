@@ -93,6 +93,16 @@ li{
     color: #575757;
     padding-left: 15px;
 }
+.SearchField::placeholder:hover{
+    opacity: 85%;
+    color: #575757;
+    background-color: black;
+}
+.SearchField:hover{
+    opacity: 85%;
+    color: white;
+    background-color: black;
+}
 .SearchField{
     padding-left: 15px;
     color: #575757;
@@ -115,8 +125,8 @@ li{
     border: 3px white solid;
     transition: ease-in-out 0.5ms;
     cursor: pointer;
-    background-color: white;
-    opacity:50%
+    background-color: black;
+    opacity:85%
 }
 
 .Media{
@@ -134,7 +144,8 @@ li{
     opacity: 10%;
 
 }
-.Media .circle:hover{
+.Media li:hover{
+    transform: scale(1.05);
 }
 .Media .circle_border{
     border: 5px solid white;
