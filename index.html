@@ -58,12 +58,6 @@
         background_array.push('./Icons/404-Page_'+index+'.jpg')
     }
     our_body=document.getElementsByTagName("body")
-<<<<<<< Updated upstream
-    // +1 чтобы больше нуля. т.к картинки _0 нет
-    our_body[0].background=background_array[Math.round(Math.random()*(number_of_images-1))]
-
-</script>
-=======
     //-1 чтобы не больше 5, +1 чтобы больше нуля. т.к картинки _0 нет
     our_body[0].background=background_array[Math.floor(Math.random()*(number_of_images-1))+1]
     
@@ -92,8 +86,7 @@
         days.innerHTML=Math.abs(Release_Date.getDate()-now_Date.getDate()-1)
         hours.innerHTML=Math.abs(Release_Date.getHours()-now_Date.getHours())
         minutes.innerHTML=Math.abs(Release_Date.getMinutes()-now_Date.getMinutes()+1)
-        seconds.innerHTML=Math.abs(Release_Date.getSeconds()-now_Date.getSeconds())
+        seconds.innerHTML=Math.abs(60-now_Date.getSeconds())
         countdown=setTimeout(Start_Countdown,1000)
     }
 </script>
->>>>>>> Stashed changes
