@@ -59,6 +59,8 @@ li{
     background-color: white;
     opacity: 10%;
 }
+.circle:hover {
+}
 .countdown .TextUbuntu{
     position: absolute;
     opacity: 100%;
@@ -79,7 +81,6 @@ li{
 .Input{
     color: white;
     font-family: "Ubuntu";
-    opacity: 100%;
 }
 
 #SearchField{
@@ -88,7 +89,6 @@ li{
     max-height: 50px;
     
 }
-
 .SearchField::placeholder{
     color: #575757;
     padding-left: 15px;
@@ -101,15 +101,7 @@ li{
     width: 510px;
     height: 50px;
 }
-.SearchField:focus{
-    background-color: black;
-    opacity: 85%;
-    color: white;
-}
-.SearchField:hover{
-    background-color: black;
-    opacity: 85%;
-}
+
 .Submit{
     border: 2px white solid;
     font-size: 17px;
@@ -121,13 +113,12 @@ li{
 }
 .Submit:hover{
     border: 3px white solid;
-    background: black;
-    opacity: 0.85;
     transition: ease-in-out 0.5ms;
     cursor: pointer;
     background-color: white;
     opacity:50%
 }
+
 .Media{
     margin-top: 77px;
 }
@@ -143,8 +134,7 @@ li{
     opacity: 10%;
 
 }
-.Media li:hover{
-    transform: scale(1.05);
+.Media .circle:hover{
 }
 .Media .circle_border{
     border: 5px solid white;
